@@ -96,6 +96,22 @@ export const routes = {
         _options: { path: '/create' },
       },
     },
+        // Key/Value
+    myModify: {
+      _options: { path: '/kv' },
+      folder: {
+        _options: { path: '/*key' },
+      },
+      edit: {
+        _options: { path: '/*key/edit' },
+      },
+      create: {
+        _options: { path: '/*key/create' },
+      },
+      'root-create': {
+        _options: { path: '/create' },
+      },
+    },
     // Key/Value
     kv: {
       _options: { path: '/kv' },
